@@ -1,0 +1,8 @@
+    1  pwd
+    2  cd Desktop/
+    3  cd Tr
+    4  cd TrainingExamples/
+    5  pwd
+    6  git init
+    7  history
+    8  history >> commands.txt
