@@ -1,0 +1,15 @@
+html, body { /* remove default settings */
+    margin:0;
+    padding: 0;
+}
+
+div {
+    margin:10px;
+}
+
+div > a {
+    display: inline-block;
+    padding: 25px;
+    margin: 10px;
+    width: 100px;
+}
