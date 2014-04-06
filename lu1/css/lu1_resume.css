@@ -1,0 +1,249 @@
+html, body {/* reset browser defaults */
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-family: Arial, sans-serif;
+}
+
+div.container {
+    width: 100%;
+    height: auto;
+    background: lightgrey;
+}
+
+header.toph {
+    height: 35px;
+    width: 100%;
+    background: lightgrey;
+}
+
+
+div.summary {
+    width: 70%;
+    height:auto;
+    background: coral;
+    float: left;
+    color: white;
+    padding: 30px;
+    line-height: 25px;
+}
+
+div.skills {
+    width: 70%;
+    height:auto;
+    background: grey;
+    float: right;
+}
+
+div.skills > header, div.education > header, div.experience > header {
+    text-transform: uppercase;
+    color: darkgray;
+    display: block;
+    margin: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+div.skills div {
+    margin: 20px;
+}
+
+div.skills div span {
+    display: inline-block;
+    background: lightblue;
+    padding: 5px;
+    margin:5px;
+    border-radius:5px;
+}
+
+div.skills div span:hover {
+    background: black;
+    color: white;
+    cursor: default;
+}
+
+div.education {
+    width: 80%;
+    height: auto;
+    background: grey;
+    float: left;
+}
+
+div.education > div {
+    margin: 20px;
+}
+
+div.education div.edudetails {
+    margin: 20px auto;
+    width: 70%;
+    line-height: 25px;
+    display: table;
+}
+
+div.education div.edudetails div:first-child {
+    float: left;
+    width: 48%;
+    text-align: right;
+}
+
+div.education div.edudetails div:last-child {
+    float: right;
+    width: 48%;
+    text-align: left;
+    padding-left: 0;
+    border-left:1px solid white;
+}
+
+div.education div.edudetails ul {
+    list-style-type: none;
+}
+
+div.education div.edudetails ul li {
+
+}
+
+div.education span:first-child {
+    font-size: 28px;
+}
+
+div.education span:first-child + span {
+    font-size: 16px;
+    color: lightgrey;
+}
+
+div.education span:last-child {
+    display: block;
+}
+
+div.experience {
+    width: 70%;
+    height: 25%;
+    background: grey;
+    float: right;
+}
+
+div.experience > div {
+    margin: 20px;
+    border-top: 1px solid white;
+}
+
+div.experience div.expdesc {
+    background: darkolivegreen;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+div.experience header.expheader span:first-child {
+    font-size: 28px;
+    display: block;
+}
+
+div.experience header.expheader span:first-child + span {
+    display: inline-block;
+    float: left;
+}
+
+div.experience header.expheader span:last-child {
+    display: inline-block;
+    float: right;
+}
+div.footer {
+    clear: both;
+    width: 100%;
+    height: 35px;
+    background: lightblue;
+    text-align: center;
+}
+
+div.leftheader {
+    padding:5px;
+    float: left;
+}
+
+span.streetadd , span.cityadd {
+    color: darkgray;
+}
+
+span.phoneadd {
+    color: black;
+}
+
+div.rightheader {
+    float: right;
+}
+
+div.rightheader span {
+    color:grey;
+    display: inline-block;
+    padding: 5px;
+}
+
+div.rightheader ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+div.rightheader ul li {
+    display:inline-block;
+    border-left: 1px solid grey;
+}
+
+div.rightheader ul li:first-child {
+    border-left: none;
+}
+
+div.rightheader ul li a {
+    width:60px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+
+div.rightheader ul li:first-child a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+div.nameheader {
+    width: 100%;
+    height: auto;
+    background: darkgray;
+    float: left;
+}
+
+div.name {
+    float:left;
+    font-size: 32px;
+    padding:15px;
+    text-transform:uppercase;
+    margin:0;
+}
+
+div.name > span.green {
+    color:green;
+}
+
+div.resumelinks {
+    float:right;
+    padding:25px;
+    text-align: center;
+}
+
+div.resumelinks > a {
+    display: inline-block;
+    text-decoration: none;
+    width: 80px;
+    color: black;
+}
+
+div.webdev {
+    background-color: green;
+    padding: 25px;
+    float: right;
+    color: white;
+    font-size: 18px;
+}
