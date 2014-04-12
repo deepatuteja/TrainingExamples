@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pagedown effect on click</title>
+    <style type="text/css">
+
+        body {
+            height: auto;
+            width:100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #scroll {
+            position: fixed;
+            top:50%;
+            right:0;
+            width: 5em;
+            height: 10em;
+            margin-top: -5em;
+            background: rgba(0, 0, 150, 0.7);
+        }
+
+        #btn_red {
+            position: absolute;
+            top:16%;
+            left: 50%;
+            margin-top: -0.75em;
+            margin-left: -0.75em;
+            background: red;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 0.75em;
+        }
+
+        #btn_yellow {
+            position: absolute;
+            top:49%;
+            left: 50%;
+            margin-top: -0.75em;
+            margin-left: -0.75em;
+            background: yellow;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 0.75em;
+        }
+
+        #btn_green {
+            position: absolute;
+            top:82%;
+            left: 50%;
+            margin-top: -0.75em;
+            margin-left: -0.75em;
+            background: green;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 0.75em;
+        }
+
+        .btn {
+            display: block;
+        }
+
+        .pages {
+            display: block;
+            width: 100%;
+            border:1px solid red;
+
+            /* transition not working..why? */
+            -moz-transition:all 2s ease-in;
+            -webkit-transition:all 2s ease-in;
+            -o-transition:all 2s ease-in;
+            transition:all 2s ease-in;
+        }
+
+        #page1{
+            background: lightblue;
+        }
+
+        #page2{
+            background: orchid;
+        }
+
+        #page3{
+            background: lightpink;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            var height = "height:"+ Math.max(document.documentElement.clientHeight, window.innerHeight || 0)+"px";
+            var pages = document.getElementsByClassName("pages");
+            for(var i = 0; i < pages.length;  i++){
+                console.log(height);
+                pages[i].setAttribute('style',height);
+                console.log(pages[i]);
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+<div id="scroll">
+    <a href="#page1" id="btn_red" class="btn"></a>
+    <a href="#page2" id="btn_yellow" class="btn"></a>
+    <a href="#page3" id="btn_green" class="btn"></a>
+</div>
+
+<a name="page1" id="page1" class="pages"></a>
+<a name="page2" id="page2" class="pages"></a>
+<a name="page3" id="page3" class="pages"></a>
+
+</body>
+</html>
